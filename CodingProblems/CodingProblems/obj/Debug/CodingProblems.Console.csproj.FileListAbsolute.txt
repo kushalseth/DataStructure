@@ -1,0 +1,6 @@
+E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\bin\Debug\CodingProblems.exe.config
+E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\bin\Debug\CodingProblems.exe
+E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\bin\Debug\CodingProblems.pdb
+E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.Console.csprojAssemblyReference.cache
+E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.exe
+E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.pdb
