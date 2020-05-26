@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingProblems
+namespace CodingProblems.Console
 {
     class Program
     {
         static void Main(string[] args)
         {
+            int result_factorial = Factorial.GetFactorial(5);
         }
     }
 }
