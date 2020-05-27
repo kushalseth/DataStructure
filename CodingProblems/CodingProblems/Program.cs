@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CodingProblems.Recursion;
 
 namespace CodingProblems.Console
 {
@@ -10,7 +6,10 @@ namespace CodingProblems.Console
     {
         static void Main(string[] args)
         {
-            int result_factorial = Factorial.GetFactorial(5);
+            #region Recursion
+            PrintNos.PrintNo(5);
+            //int result_factorial = Factorial.GetFactorial(5);
+            #endregion Recursion
         }
     }
 }
