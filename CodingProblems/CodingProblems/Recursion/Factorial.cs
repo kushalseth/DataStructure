@@ -16,7 +16,8 @@ namespace CodingProblems.Console
             } 
             else
             {
-                return number * GetFactorial(number - 1);
+                var exe = number * GetFactorial(number - 1);
+                return exe;
             }
         }
     }
