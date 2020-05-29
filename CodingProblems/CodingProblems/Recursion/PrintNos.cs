@@ -12,6 +12,7 @@ namespace CodingProblems.Recursion
     // output = 1 2 3 4 5 6 7 8 9 10
     public static class PrintNos
     {
+        // Constraints: 1 <= n <= power(10,7)
         public static void PrintNo(int N)
         {
             if(N != 0)
