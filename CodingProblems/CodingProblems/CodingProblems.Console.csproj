@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Recursion\CountDigits.cs" />
+    <Compile Include="Recursion\DigitalRoot.cs" />
     <Compile Include="Recursion\Factorial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
