@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayProblems\ArrayInsertAtEnd.cs" />
     <Compile Include="Recursion\CountDigits.cs" />
     <Compile Include="Recursion\DigitalRoot.cs" />
     <Compile Include="Recursion\Factorial.cs" />
