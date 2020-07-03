@@ -10,12 +10,14 @@ I am also focusing on latest competitions and will be adding the questions in th
 
 # Let's Start
 
+- [Warm up Challenges](#WARMUPCHALLENGES)
 - [Recusrion](#RECURSION)
+- [Array](#ARRAY)
 
-# RECURSION
+# WARMUPCHALLENGES
 
 <details>
-<summary>Sock Merchant Problem</summary>
+<summary>Sock Merchant Problem </summary> ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `HackerRank`
 
 ```
 Hackerrank Problem: https://www.hackerrank.com/challenges/sock-merchant
@@ -31,6 +33,114 @@ Solution:
 ```
 Hackerrank Problem: https://www.hackerrank.com/challenges/counting-valleys/
 Hackerrank Title: Counting Valleys
+Solution:
+```
+
+</details>
+
+<details>
+<summary>Jumping on the Clouds</summary>
+
+```
+Hackerrank Problem: https://www.hackerrank.com/challenges/jumping-on-the-clouds/
+Hackerrank Title: Jumping on the Clouds
+Solution:
+```
+
+</details>
+<details>
+<summary>Repeated String</summary>
+
+```
+Hackerrank Problem: https://www.hackerrank.com/challenges/repeated-string/
+Hackerrank Title: Repeated String
+Solution:
+```
+
+</details>
+
+## RECURSION
+
+<details>
+<summary>CountDigits</summary>
+
+```
+Problem: Geeks For Geeks
+Title: CountDigits in a number
+Solution:
+```
+
+</details>
+
+<details>
+<summary>DigitalRoot</summary>
+
+```
+Problem: Geeks For Geeks
+Title: Find DigitalRoot. DigitalRoot of a number is the recursive sum of its digits until we get a single digit number.
+Solution:
+```
+
+</details>
+<details>
+<summary>Factorial</summary>
+
+```
+Problem: Geeks For Geeks
+Title: Factorial
+Solution:
+```
+
+</details>
+<details>
+<summary>Fibonacci</summary>
+
+```
+Problem: Geeks For Geeks
+Title: Fibonacci
+Solution:
+```
+
+</details>
+<details>
+<summary>PrintNo</summary>
+
+```
+Problem: Geeks For Geeks
+Title: PrintNo
+Solution:
+```
+
+</details>
+<details>
+<summary>SumOfDigits</summary>
+
+```
+Problem: Geeks For Geeks
+Title: SumOfDigits
+Solution:
+```
+
+</details>
+
+### ARRAY
+
+<details>
+<summary>2D Array - DS</summary>
+
+```
+Hackerrank Problem: https://www.hackerrank.com/challenges/2d-array/
+Hackerrank Title: 2D Array - DS
+Solution:
+```
+
+</details>
+<details>
+<summary>Arrays: Left Rotation</summary>
+
+```
+Hackerrank Problem: https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem
+Hackerrank Arrays: Left Rotation
 Solution:
 ```
 
