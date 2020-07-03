@@ -4,7 +4,7 @@
 
 I am a Software Developer focusing on my Data Structure and Algorithms skills. I want to join any one of these companies: #Microsoft #Amazon #Google #Tesla #SpaceX #Neuralink #NASA #Alphabet #Twitter #Linkedin #Netflix #facebook or #Uber. I am practicing problems from multiple websites and trying to build up my codeforces and other profiles.
 
-I am also focusing on latest competitions and will be adding the questions in this repository. It's a start but a long way to cover. All the sugesstions are welcome. Stay connected and let's learn together.
+![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)`I am also focusing on latest competitions and will be adding the questions in this repository. It's a start but a long way to cover. All the sugesstions are welcome. Stay connected and let's learn together.`
 
 ![happy coding](https://github.com/kushalseth/DataStructure/blob/master/blob/elon2.jpg)
 
@@ -17,44 +17,44 @@ I am also focusing on latest competitions and will be adding the questions in th
 # WARMUPCHALLENGES
 
 <details>
-<summary>Sock Merchant Problem </summary> ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `HackerRank`
+<summary>Stock Merchant Problem (HackerRank)</summary>
 
 ```
 Hackerrank Problem: https://www.hackerrank.com/challenges/sock-merchant
-Hackerrank Title: Sock Merchant
-Solution:
+Hackerrank Title: Stock Merchant
+Solution: https://github.com/kushalseth/DataStructure/blob/master/JavaScripts/stockMerchant.js
 ```
 
 </details>
 
 <details>
-<summary>Counting Valleys Problem</summary>
+<summary>Counting Valleys Problem (HackerRank)</summary>
 
 ```
 Hackerrank Problem: https://www.hackerrank.com/challenges/counting-valleys/
 Hackerrank Title: Counting Valleys
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/HackerRank/countingValleys.cs
 ```
 
 </details>
 
 <details>
-<summary>Jumping on the Clouds</summary>
+<summary>Jumping on the Clouds (HackerRank)</summary>
 
 ```
 Hackerrank Problem: https://www.hackerrank.com/challenges/jumping-on-the-clouds/
 Hackerrank Title: Jumping on the Clouds
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/HackerRank/JumpingOnClouds.cs
 ```
 
 </details>
 <details>
-<summary>Repeated String</summary>
+<summary>Repeated String (HackerRank)</summary>
 
 ```
 Hackerrank Problem: https://www.hackerrank.com/challenges/repeated-string/
 Hackerrank Title: Repeated String
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/HackerRank/RepeatedString.cs
 ```
 
 </details>
@@ -62,63 +62,63 @@ Solution:
 ## RECURSION
 
 <details>
-<summary>CountDigits</summary>
+<summary>CountDigits (Geeks For Geeks)</summary>
 
 ```
 Problem: Geeks For Geeks
 Title: CountDigits in a number
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/Recursion/CountDigits.cs
 ```
 
 </details>
 
 <details>
-<summary>DigitalRoot</summary>
+<summary>DigitalRoot (Geeks For Geeks)</summary>
 
 ```
 Problem: Geeks For Geeks
 Title: Find DigitalRoot. DigitalRoot of a number is the recursive sum of its digits until we get a single digit number.
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/Recursion/DigitalRoot.cs
 ```
 
 </details>
 <details>
-<summary>Factorial</summary>
+<summary>Factorial (Geeks For Geeks)</summary>
 
 ```
 Problem: Geeks For Geeks
 Title: Factorial
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/Recursion/Factorial.cs
 ```
 
 </details>
 <details>
-<summary>Fibonacci</summary>
+<summary>Fibonacci (Geeks For Geeks)</summary>
 
 ```
 Problem: Geeks For Geeks
 Title: Fibonacci
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/Recursion/Fibonacci.cs
 ```
 
 </details>
 <details>
-<summary>PrintNo</summary>
+<summary>PrintNo (Geeks For Geeks)</summary>
 
 ```
 Problem: Geeks For Geeks
 Title: PrintNo
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/Recursion/PrintNos.cs
 ```
 
 </details>
 <details>
-<summary>SumOfDigits</summary>
+<summary>SumOfDigits (Geeks For Geeks)</summary>
 
 ```
 Problem: Geeks For Geeks
 Title: SumOfDigits
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/Recursion/SumOfDigits.cs
 ```
 
 </details>
@@ -126,22 +126,22 @@ Solution:
 ### ARRAY
 
 <details>
-<summary>2D Array - DS</summary>
+<summary>2D Array - DS (HackerRank)</summary>
 
 ```
 Hackerrank Problem: https://www.hackerrank.com/challenges/2d-array/
 Hackerrank Title: 2D Array - DS
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/HackerRank/Array2D.cs
 ```
 
 </details>
 <details>
-<summary>Arrays: Left Rotation</summary>
+<summary>Arrays: Left Rotation (HackerRank)</summary>
 
 ```
 Hackerrank Problem: https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem
 Hackerrank Arrays: Left Rotation
-Solution:
+Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/HackerRank/ArrayRotation.cs
 ```
 
 </details>
