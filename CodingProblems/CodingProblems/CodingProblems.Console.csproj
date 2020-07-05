@@ -44,6 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayProblems\ArrayInsertAtEnd.cs" />
+    <Compile Include="HackerRank\Array2D.cs" />
+    <Compile Include="HackerRank\ArrayRotation.cs" />
+    <Compile Include="HackerRank\CountingValleys.cs" />
+    <Compile Include="HackerRank\JumpingOnClouds.cs" />
+    <Compile Include="HackerRank\RepeatedString.cs" />
     <Compile Include="Recursion\CountDigits.cs" />
     <Compile Include="Recursion\DigitalRoot.cs" />
     <Compile Include="Recursion\Factorial.cs" />
