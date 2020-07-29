@@ -36,3 +36,89 @@ C++ -> vectors
 Java and C# -> ArrayList
 Python -> List
 ```
+
+# Operations on Array
+
+## 1. Search
+
+- Searching an element in an array is about returning the index of an array. If the element is not found, we returns -1.
+
+_Example of Linear Search_
+
+- We have to search the first index of the given index.
+- Linear search is about searching the element in the given array. If the event is not found then we have to traverse the whole array.
+- The worst case complexity of this is Big O(n). This happens when the element is not found in the array. as the result will be a linear expresssion always.
+
+```
+int search(int arr[], int length, int elementtosearch) {
+    for(int i =0; i < length; i++) {
+        if(arr[i] == elementtosearch) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
+
+- Above elements were not sorted. But what happens when the arrays are sorted.
+- We can do a seach with Big O(log n) for sorted array.
+
+## 2. Insert
+
+- _Insertion in Fixed Size Arrays_
+- We cannot insert in fixed fixed array if it is already full. So, we can insert an element at a position only when it has some empty space.
+- When we insert, we returm the size of the updated array. If the size and capaity of the array is same, we will not increase the size of array and will directly returns the current size of array.
+- Time complexity of Insert operation: worst case Big O(n)
+- example:
+
+```
+function insertion(int arr[], int currentSizeOfArray, int elementtoinsert, int position, int capacity) {
+    if(currentSizeOfArray == capacity)
+        return currentSizeOfArray;
+
+    int indexToInsertAt = position - 1; // as position starts from 1 and index starts from 0
+
+    for(int i = currentSizeOfArray - 1; i >= indexToInsertAt; i++) {
+        arr[i+1] = arr[i];
+    }
+    arr[indexToInsertAt] = elementtoinsert;
+    return currentSizeOfArray + 1;
+}
+```
+
+- _Insertion in Dynamic Size Arrays_
+- Dynamic size array doubles it's size when they are full and releases their existing memory.
+- This is the most costly step when you are using dynamic sized error. Need to be avoided in production environments.
+- add operation in arraylist of java and c#.
+
+## 3. Delete
+
+- When we delete an array, we want to remove the elemenet from the array, reduce the cuurent size of array, but capacity remains same for array. Also, the elements should move one position ahead.
+
+```
+int deleteElement(int arr[], int sizeOfArray, int elementToDelete) {
+    int i = 0;
+    // searching element in array
+    for(i = 0; i < sizeOfArray;i++) {
+        if(arr[i] == elementToDelete) {
+            break;
+        }
+    }
+    // element is not present in array
+    if(i == sizeOfArray) {
+        return sizeOfArray;
+    }
+    for(int j = i; j < n - 1; j++) {
+        arr[j] = arr[j+1];
+    }
+    retun (n -1);
+}
+```
+
+## 4. Get and Update
+
+- We can directly get or update the element in an array with Big O (1)
+
+# Questions on Array
+
+## 1. Check if the array is sorted or not
