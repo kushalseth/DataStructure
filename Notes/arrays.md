@@ -1,4 +1,4 @@
-Let's discuss arrays in part-3. We will quickly read or skip the theory and will solve some Array competitive problems. I will share few competitive problems here but you can check more at my GitHub repository. https://github.com/kushalseth/DataStructure
+Let's discuss arrays theoretically along with few time complexities in Part-I and will solve some Array competitive problems in Part-II.
 
 # Array
 
@@ -6,7 +6,7 @@ Let's discuss arrays in part-3. We will quickly read or skip the theory and will
 
 > **#important** This means we can access the element using the index of the array. The advantage of accessing using index and contiguous memory location is the complexity to get the ith index is Big O(1). Means they find the ith element in constant time. Big O(1), because you can easily get the address of any item using x + iy, where x is the initial memory state, and y is the memory of each item.
 
-- Array provides Cache friendlyness, Cache is the memory closed to CPU, then RAM or any other harddisk memory.
+- Array provides Cache friendliness, Cache is the memory closed to CPU, then RAM or any other hard disk memory.
 
 > **#important** Due to contiguous memory location, It's more likely that the CPU caches all the contiguous items of Array.
 
@@ -29,7 +29,7 @@ int[] array1 = new int[] { 1, 3, 5, 7, 9 };
 - Dynamic Sized Arrays
   In dynamic sized array, we can insert as many elements as we want. Whenever the capacity is exhausted for an array and we try to insert something the size of array automatically increases.
 
-Example of dynamic sized arrayes:
+Example of dynamic sized arrays:
 
 ```
 C++ -> vectors
@@ -47,7 +47,7 @@ _Example of Linear Search_
 
 - We have to search the first index of the given index.
 - Linear search is about searching the element in the given array. If the event is not found then we have to traverse the whole array.
-- The worst case complexity of this is Big O(n). This happens when the element is not found in the array. as the result will be a linear expresssion always.
+- The worst case complexity of this is Big O(n). This happens when the element is not found in the array. as the result will be a linear expression always.
 
 ```
 int search(int arr[], int length, int elementtosearch) {
@@ -61,13 +61,14 @@ int search(int arr[], int length, int elementtosearch) {
 ```
 
 - Above elements were not sorted. But what happens when the arrays are sorted.
-- We can do a seach with Big O(log n) for sorted array.
+- We can do a search with Big O(log n) for sorted array.
 
 ## 2. Insert
 
-- _Insertion in Fixed Size Arrays_
+_Insertion in Fixed Size Arrays_
+
 - We cannot insert in fixed fixed array if it is already full. So, we can insert an element at a position only when it has some empty space.
-- When we insert, we returm the size of the updated array. If the size and capaity of the array is same, we will not increase the size of array and will directly returns the current size of array.
+- When we insert, we return the size of the updated array. If the size and capacity of the array is same, we will not increase the size of array and will directly returns the current size of array.
 - Time complexity of Insert operation: worst case Big O(n)
 - example:
 
@@ -93,7 +94,8 @@ function insertion(int arr[], int currentSizeOfArray, int elementtoinsert, int p
 
 ## 3. Delete
 
-- When we delete an array, we want to remove the elemenet from the array, reduce the cuurent size of array, but capacity remains same for array. Also, the elements should move one position ahead.
+- When we delete an array, we want to remove the element from the array, reduce the current size of array, but capacity remains same for array. Also, the elements should move one position ahead.
+  i Time complexity of delete is Big O(n)
 
 ```
 int deleteElement(int arr[], int sizeOfArray, int elementToDelete) {
@@ -119,6 +121,4 @@ int deleteElement(int arr[], int sizeOfArray, int elementToDelete) {
 
 - We can directly get or update the element in an array with Big O (1)
 
-# Questions on Array
-
-## 1. Check if the array is sorted or not
+Stay tuned for part-II, where we will solve multiple array problems. and then later in the series, I will be working on multiple Data Structures. Stay Connected!! Stay Safe!!
