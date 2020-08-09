@@ -6,8 +6,6 @@ I am practicing problems from multiple websites and trying to build up my codefo
 
 ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)`I am also focusing on latest competitions and will be adding the questions in this repository. It's a start but a long way to cover. All the sugesstions are welcome. Stay connected and let's learn together.`
 
-![happy coding](https://github.com/kushalseth/DataStructure/blob/master/blob/elon2.jpg)
-
 # Let's Start
 
 - [Warm up Challenges](#WARMUPCHALLENGES)
