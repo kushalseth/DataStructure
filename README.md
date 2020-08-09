@@ -216,13 +216,13 @@ Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems
 
 <details>
 
-<summary>Is Array Sorted (HackerRank)</summary>
+<summary>Is Array Sorted (GeeksForGeek)</summary>
 
 ```
 
 GeeksForGeek: https://www.geeksforgeeks.org/program-check-array-sorted-not-iterative-recursive/
 
-Hackerrank Arrays: Program to check if an array is sorted or not (Iterative and Recursive)
+Problem: Program to check if an array is sorted or not (Iterative and Recursive)
 
 Solution: https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/ArrayProblems/ArrayIsSorted.cs
 
