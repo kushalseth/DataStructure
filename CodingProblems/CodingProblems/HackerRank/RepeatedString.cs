@@ -55,7 +55,7 @@ class Solution
         return count;
     }
 
-    static void Main(string[] args)
+    static void Main5(string[] args)
     {
         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 

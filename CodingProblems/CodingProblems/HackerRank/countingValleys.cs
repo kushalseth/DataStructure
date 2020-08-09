@@ -30,7 +30,7 @@ class CountingValleys
 
     }
 
-    static void Main(string[] args)
+    static void Mai3n(string[] args)
     {
         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 

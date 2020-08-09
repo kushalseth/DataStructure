@@ -8,7 +8,7 @@ namespace ConsoleApp5
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             int[][] arr = new int[6][];
             arr[0] = new int[] { -1, -1, 0, -9, -2, -2 };

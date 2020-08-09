@@ -28,7 +28,7 @@ class JumpingOnClouds
         return steps;
     }
 
-    static void Main(string[] args)
+    static void Main4(string[] args)
     {
         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 

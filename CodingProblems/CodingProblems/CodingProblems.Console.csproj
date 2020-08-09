@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayProblems\ArrayInsertAtEnd.cs" />
+    <Compile Include="ArrayProblems\ArrayIsSorted.cs" />
+    <Compile Include="ArrayProblems\ReverseAnArray.cs" />
     <Compile Include="HackerRank\Array2D.cs" />
     <Compile Include="HackerRank\ArrayRotation.cs" />
     <Compile Include="HackerRank\CountingValleys.cs" />

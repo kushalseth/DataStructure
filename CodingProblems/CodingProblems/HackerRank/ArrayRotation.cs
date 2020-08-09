@@ -29,7 +29,7 @@ class ArrayRotation
         return result;
     }
 
-    static void Main(string[] args)
+    static void Main2(string[] args)
     {
         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
