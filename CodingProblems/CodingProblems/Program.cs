@@ -16,7 +16,7 @@ namespace CodingProblems.Console
             //long nthFibonacciNumber = Fibonacci.GetNthFibonacciNumber(20);
             #endregion Recursion
 
-            int[] theArray = { 1, 3, 5, 7 };
+            int[] theArray = { 1 };
             //ArrayInsertAtEnd.insertAtEnd(theArray, 6, 90);
 
             ReverseAnArray.ReversedArray(theArray);

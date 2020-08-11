@@ -10,7 +10,15 @@ namespace CodingProblems.ArrayProblems
     {
         public static int[] ReversedArray(int[] array)
         {
-
+            int j = -1;
+            for(int i = array.Length -1; i >= array.Length / 2; i--)
+            {
+                j++;
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+            return array;
         }
     }
 }
