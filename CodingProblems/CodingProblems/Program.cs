@@ -16,10 +16,10 @@ namespace CodingProblems.Console
             //long nthFibonacciNumber = Fibonacci.GetNthFibonacciNumber(20);
             #endregion Recursion
 
-            int[] theArray = { 1 };
+            int[] theArray = { 2, 2, 3, 3, 10, 10 };
             //ArrayInsertAtEnd.insertAtEnd(theArray, 6, 90);
 
-            ReverseAnArray.ReversedArray(theArray);
+            RemoveDuplicate.RemoveDuplicatesFromSortedArray(theArray, theArray.Length);
         }
     }
 }
