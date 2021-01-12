@@ -10,7 +10,7 @@ public class Main {
         // System.out.println(result);
 
         // insertion inside an array
-        int[] arr = new int[5];
+        /*int[] arr = new int[5];
         arr[0] = 20; // {20, 30, 40, 50 };
         arr[1] = 30;
         arr[2] = 40;
@@ -18,7 +18,13 @@ public class Main {
 
         int x = 7;
         int result = insert(arr, 4, x, 5, 2);
-        System.out.println(result);
+        System.out.println(result);*/
+
+
+        // deletion from an array
+        int[] arr = new int[] {3, 8, 12, 5, 6};
+        int x = 12;
+        System.out.println(delete(arr, arr.length, x));
 
     }
 
@@ -53,5 +59,26 @@ public class Main {
 
         return result;
 
+    }
+
+    private static int delete(int arr[], int n, int x) {
+        int result = -1;
+        boolean isFound = false;
+
+        for(int i = 0; i < n; i++) {
+            if(arr[i] == x) {
+                isFound = true;
+                result = i;
+                arr[i] = i == n ? 0 : arr[i + 1];
+                if(i != n)
+                    arr[i + 1] = 0;
+            }
+            else if(isFound){
+                arr[i] = i < n -1 ? arr[i + 1] : 0;
+            }
+        }
+
+
+        return result;
     }
 }
