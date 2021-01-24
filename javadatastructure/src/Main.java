@@ -1,4 +1,5 @@
 import java.lang.reflect.Array;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,10 +23,49 @@ public class Main {
 
 
         // deletion from an array
-        int[] arr = new int[] {3, 8, 12, 5, 6};
+        /*int[] arr = new int[] {3, 8, 12, 5, 6};
         int x = 12;
-        System.out.println(delete(arr, arr.length, x));
+        System.out.println(delete(arr, arr.length, x));*/
 
+        // largest element from the array
+        /*int[] arr = new int[] { 10, 5, 20, 8 };
+        System.out.println(largestElement(arr, arr.length));*/
+
+        int[] arr = new int[] {10, 5, 20, 8 };
+        System.out.println(secondlargestElement(arr, arr.length));
+
+
+    }
+
+    private static int secondlargestElement(int arr[], int length) {
+        int result = -1;
+
+        //int[] resultArray = new int[2];
+        List<Integer> resultArray = new ArrayList<Integer>();
+
+        for(int i = 0; i < length; i++) {
+            if(result < arr[i]) {
+                for(int j = 0; j < resultArray.size(); j ++) {
+                    if(arr[i] > arr[j]) {
+                        resultArray.add(arr[i]);
+                    }
+                    result =  arr[i];
+                }
+            }
+        }
+        return  result;
+    }
+
+
+    private static int largestElement(int arr[], int length) {
+        int result = -1;
+
+        for(int i = 0; i < length; i++) {
+            if(result < arr[i]) {
+                result =  arr[i];
+            }
+        }
+        return  result;
     }
 
     private static int search(int arr[], int n, int x) {
