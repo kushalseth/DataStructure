@@ -4,3 +4,4 @@ E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\bin\De
 E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.exe
 E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.pdb
 E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.Console.csprojAssemblyReference.cache
+E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.Console.csproj.CoreCompileInputs.cache
