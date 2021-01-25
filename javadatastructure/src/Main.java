@@ -38,10 +38,6 @@ public class Main {
     }
 
     private static int secondLargestElement(int arr[], int length) {
-        //int result = -1;
-
-        //int[] resultArray = new int[2];
-        //List<Integer> resultArray = new ArrayList<Integer>();
         int largestNumber = -1;
         int secondLargestNumber = -1;
 
