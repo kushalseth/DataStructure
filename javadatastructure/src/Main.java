@@ -31,29 +31,28 @@ public class Main {
         /*int[] arr = new int[] { 10, 5, 20, 8 };
         System.out.println(largestElement(arr, arr.length));*/
 
-        int[] arr = new int[] {10, 5, 20, 8 };
-        System.out.println(secondlargestElement(arr, arr.length));
+        int[] arr = new int[] {10, 5, 8, 20 }; //  {20, 10, 20, 5, 8};     {10, 10, 10, 10 }; // {10, 5, 8, 20 };
+        System.out.println(secondLargestElement(arr, arr.length));
 
 
     }
 
-    private static int secondlargestElement(int arr[], int length) {
-        int result = -1;
+    private static int secondLargestElement(int arr[], int length) {
+        //int result = -1;
 
         //int[] resultArray = new int[2];
-        List<Integer> resultArray = new ArrayList<Integer>();
+        //List<Integer> resultArray = new ArrayList<Integer>();
+        int largestNumber = -1;
+        int secondLargestNumber = -1;
 
         for(int i = 0; i < length; i++) {
-            if(result < arr[i]) {
-                for(int j = 0; j < resultArray.size(); j ++) {
-                    if(arr[i] > arr[j]) {
-                        resultArray.add(arr[i]);
-                    }
-                    result =  arr[i];
-                }
+            if((arr[i] > largestNumber || arr[i] > secondLargestNumber)) {
+                var storeLargest = arr[i] == largestNumber ? secondLargestNumber :  largestNumber ;
+                largestNumber = arr[i] >= largestNumber ? arr[i] : largestNumber;
+                secondLargestNumber = arr[i] < largestNumber ?  arr[i] : storeLargest;
             }
         }
-        return  result;
+        return  secondLargestNumber;
     }
 
 
