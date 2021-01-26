@@ -31,10 +31,33 @@ public class Main {
         /*int[] arr = new int[] { 10, 5, 20, 8 };
         System.out.println(largestElement(arr, arr.length));*/
 
-        int[] arr = new int[] {10, 5, 8, 20 }; //  {20, 10, 20, 5, 8};     {10, 10, 10, 10 }; // {10, 5, 8, 20 };
-        System.out.println(secondLargestElement(arr, arr.length));
+        int[] arr = new int[] { 10, 11, 9 }; //  { 10, 20 }; { 10 }; { 10, 11, 9 }
+        System.out.println(isArraySorted(arr, arr.length));
 
 
+    }
+
+    private static boolean isArraySorted(int arr[], int arraylength) {
+        boolean result = true;
+        int largestElement = Integer.MIN_VALUE;
+        /*for(int i = 0; i < arraylength; i++) {
+            if(largestElement <= arr[i]) {
+                largestElement = arr[i];
+            }
+            else {
+                result = false;
+                break;
+            }
+        }*/
+
+        for(int i = 1; i < arraylength; i++) {
+            if(arr[i] < arr[i - 1]) {
+                result = false;
+                break;
+            }
+        }
+
+        return result;
     }
 
     private static int secondLargestElement(int arr[], int length) {
