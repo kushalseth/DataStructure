@@ -31,10 +31,22 @@ public class Main {
         /*int[] arr = new int[] { 10, 5, 20, 8 };
         System.out.println(largestElement(arr, arr.length));*/
 
-        int[] arr = new int[] { 10, 11, 9 }; //  { 10, 20 }; { 10 }; { 10, 11, 9 }
-        System.out.println(isArraySorted(arr, arr.length));
+        int[] arr = new int[] { 22, 27, 97 }; //  { 10, 20 }; { 10 }; { 10, 11, 9 }
+        System.out.println(reversedArray(arr, arr.length));
 
 
+    }
+
+    private static int[] reversedArray(int arr[], int arraylength) {
+
+        var splitLength = arraylength / 2;
+        for(int i = 0; i < splitLength; i++) {
+            var temp = arr[i];
+            arr[i] = arr[arraylength - 1 - i];
+            arr[arraylength - 1 - i] = temp;
+        }
+
+        return  arr;
     }
 
     private static boolean isArraySorted(int arr[], int arraylength) {
