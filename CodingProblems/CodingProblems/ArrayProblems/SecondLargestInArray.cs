@@ -8,21 +8,28 @@ namespace CodingProblems.ArrayProblems
 {
     public static class SecondLargestInArray
     {
+        // {10, 1, 2, 33, 12}; 
+        // {3, 3, 3, 3 };
+        // { 2, 2, 3, 3, 10, 10 };
+        // { -10, -4, -2, -33, -12 };
         public static int SecondLargest(int[] arr, int arrayLength)
         {
-            int largestNumber = -1;
-            int secondLargestNumber = -1;
+            int largest = int.MinValue;
+            int secondlargest = int.MinValue;
 
-            for (int i = 0; i < arrayLength; i++)
+            for(int i =0; i < arrayLength; i++)
             {
-                if ((arr[i] > largestNumber || arr[i] > secondLargestNumber))
+                if(arr[i] > largest)
                 {
-                    var storeLargest = arr[i] == largestNumber ? secondLargestNumber : largestNumber;
-                    largestNumber = arr[i] >= largestNumber ? arr[i] : largestNumber;
-                    secondLargestNumber = arr[i] < largestNumber ? arr[i] : storeLargest;
+                    secondlargest = largest;
+                    largest = arr[i];
+                }
+                else if(arr[i] < largest && arr[i] > secondlargest)
+                {
+                    secondlargest = arr[i];
                 }
             }
-            return secondLargestNumber;
+            return secondlargest;
         }
     }
 }

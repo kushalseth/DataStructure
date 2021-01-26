@@ -38,17 +38,22 @@ public class Main {
     }
 
     private static int secondLargestElement(int arr[], int length) {
-        int largestNumber = -1;
-        int secondLargestNumber = -1;
-
-        for(int i = 0; i < length; i++) {
-            if((arr[i] > largestNumber || arr[i] > secondLargestNumber)) {
-                var storeLargest = arr[i] == largestNumber ? secondLargestNumber :  largestNumber ;
-                largestNumber = arr[i] >= largestNumber ? arr[i] : largestNumber;
-                secondLargestNumber = arr[i] < largestNumber ?  arr[i] : storeLargest;
+        int largestElement = Integer.MIN_VALUE;
+        int secondlargestElement = Integer.MIN_VALUE;
+        for(int i = 0; i < length; i++)
+        {
+            int contextElement = arr[i];
+            if (contextElement > largestElement)
+            {
+                secondlargestElement = largestElement;
+                largestElement = contextElement;
+            }
+            else if(contextElement < largestElement && contextElement > secondlargestElement)
+            {
+                secondlargestElement = contextElement;
             }
         }
-        return  secondLargestNumber;
+        return secondlargestElement;
     }
 
 

@@ -7,22 +7,10 @@ namespace CodingProblems.Console
     {
         static void Main(string[] args)
         {
-            #region Recursion
-            //PrintNos.PrintNo(5);
-            //int result_factorial = Factorial.GetFactorial(5);
-            //int sumofdigits = SumOfDigits.Sum(7530);
-            //int countDigits = CountDigits.CountDigitsInNumber(530);
-            //int digitalRoot = DigitalRoot.GetDigitalRoot(9999);
-            //long nthFibonacciNumber = Fibonacci.GetNthFibonacciNumber(20);
-            #endregion Recursion
 
-            //int[] theArray = { 2, 2, 3, 3, 10, 10 };
-            ////ArrayInsertAtEnd.insertAtEnd(theArray, 6, 90);
-
-            //RemoveDuplicate.RemoveDuplicatesFromSortedArray(theArray, theArray.Length);
-
-            int[] array = { 2, 2, 3, 3, 10, 10 };
+            int[] array = { -10, -4, -2, -33, -12 };
             System.Console.WriteLine(SecondLargestInArray.SecondLargest(array, array.Length));
+            System.Console.ReadLine();
         }
     }
 }
