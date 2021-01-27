@@ -31,10 +31,39 @@ public class Main {
         /*int[] arr = new int[] { 10, 5, 20, 8 };
         System.out.println(largestElement(arr, arr.length));*/
 
-        int[] arr = new int[] { 22, 27, 97 }; //  { 10, 20 }; { 10 }; { 10, 11, 9 }
-        System.out.println(reversedArray(arr, arr.length));
+        // reverse array
+        // int[] arr = new int[] { 22, 27, 97 }; //  { 10, 20 }; { 10 }; { 10, 11, 9 }
+        // System.out.println(reversedArray(arr, arr.length));
+
+        int[] arr = new int[] { 10, 10, 10 }; //{ 10, 20, 20, 30, 30, 50, 50 };
+        System.out.println(removeDuplicateFromSortedArrays(arr, arr.length));
 
 
+    }
+
+    private static int[] removeDuplicateFromSortedArrays(int arr[], int arrayLength) {
+        int capturedIndex = -1;
+
+        for(int i = 1; i < arrayLength; i++) {
+
+            /*if(arr[i-1] == arr[i]) {
+                if(capturedIndex != -1) {
+                }
+                else {
+                    capturedIndex = i;
+                }
+            }
+            else if(capturedIndex != -1){
+                arr[capturedIndex] = arr[i];
+                capturedIndex ++;
+            }*/
+            if(arr[i-1] != arr[i]) {
+                arr[capturedIndex] = arr[i];
+                capturedIndex ++;
+            }
+        }
+
+        return arr;
     }
 
     private static int[] reversedArray(int arr[], int arraylength) {
