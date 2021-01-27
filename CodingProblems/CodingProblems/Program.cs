@@ -7,9 +7,14 @@ namespace CodingProblems.Console
     {
         static void Main(string[] args)
         {
+            // -10, -4, -2, -33, -12
+            // 8, 10, 10
+            // 9
+            // 10, 20, 30
+
 
             int[] array = { -10, -4, -2, -33, -12 };
-            System.Console.WriteLine(SecondLargestInArray.SecondLargest(array, array.Length));
+            System.Console.WriteLine(ArrayIsSorted.IsSortedArray(array));
             System.Console.ReadLine();
         }
     }

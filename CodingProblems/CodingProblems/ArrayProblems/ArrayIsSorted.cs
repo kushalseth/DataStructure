@@ -8,28 +8,25 @@ namespace CodingProblems.ArrayProblems
 {
     public static class ArrayIsSorted
     {
-public static bool IsArraySorted(int[] array)
-{
-    bool isSorted = false;
-
-    for (int i = 1; i < array.Length; i++)
-    {
-        if (!(array[i-1] < array[i]))
+        // -10, -4, -2, -33, -12
+        // 8, 10, 10
+        // 9
+        // 10, 20, 30
+        public static bool IsSortedArray(int[] arr)
         {
-            isSorted = false;
-            break;
+            bool result = true;
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] < arr[i - 1])
+                {
+                    result = false;
+                    break;
+                }
+            }
+
+            return result;
         }
-        else
-        {
-            isSorted = true;
-        }
-    }
 
-    if (array.Length == 0 || array.Length == 1)
-        isSorted = true;
-
-    return isSorted;
-
-}
     }
 }
