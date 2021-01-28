@@ -35,10 +35,26 @@ public class Main {
         // int[] arr = new int[] { 22, 27, 97 }; //  { 10, 20 }; { 10 }; { 10, 11, 9 }
         // System.out.println(reversedArray(arr, arr.length));
 
-        int[] arr = new int[] { 10, 10, 10 }; //{ 10, 20, 20, 30, 30, 50, 50 };
-        System.out.println(removeDuplicateFromSortedArrays(arr, arr.length));
+        //int[] arr = new int[] { 10, 10, 10 }; //{ 10, 20, 20, 30, 30, 50, 50 };
+        //System.out.println(removeDuplicateFromSortedArrays(arr, arr.length));
 
+        int[] arr = new int[] { 8, 5, 0, 10, 0, 20 };
+        System.out.println(moveAllZerosToEnd(arr, arr.length));
+    }
 
+    private static int[] moveAllZerosToEnd(int arr[], int arrayLength) {
+
+        int countOfNonZeros = 0;
+        for(int i = 0; i < arrayLength; i ++) {
+            if(arr[i] != 0) {
+                var temp = arr[countOfNonZeros];
+                arr[countOfNonZeros] = arr[i];
+                arr[i] = temp;
+                countOfNonZeros++;
+            }
+        }
+
+        return  arr;
     }
 
     private static int[] removeDuplicateFromSortedArrays(int arr[], int arrayLength) {

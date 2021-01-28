@@ -15,10 +15,10 @@ namespace CodingProblems.ArrayProblems
         public static bool IsSortedArray(int[] arr)
         {
             bool result = true;
-
-            for (int i = 1; i < arr.Length; i++)
+           
+            for(int i = 1; i < arr.Length; i++)
             {
-                if (arr[i] < arr[i - 1])
+                if(arr[i] < arr[i-1])
                 {
                     result = false;
                     break;
