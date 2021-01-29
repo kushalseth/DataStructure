@@ -38,8 +38,65 @@ public class Main {
         //int[] arr = new int[] { 10, 10, 10 }; //{ 10, 20, 20, 30, 30, 50, 50 };
         //System.out.println(removeDuplicateFromSortedArrays(arr, arr.length));
 
-        int[] arr = new int[] { 8, 5, 0, 10, 0, 20 };
-        System.out.println(moveAllZerosToEnd(arr, arr.length));
+        //int[] arr = new int[] { 8, 5, 0, 10, 0, 20 };
+        //System.out.println(moveAllZerosToEnd(arr, arr.length));
+
+        //int[] arr = new int[] { 1, 2, 3, 4, 5 };
+        //System.out.println(leftRotateByOne(arr, arr.length));
+
+        int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+        System.out.println(leftRotateByXPlace(arr, arr.length, 3));
+    }
+
+    private static  int[] leftRotateByXPlace(int arr[], int arrayLength, int xPlaces) {
+        if(xPlaces < arrayLength) {
+            int[] storeArray = new int[xPlaces];
+            // storing the variables in storage array, so that it can be used later
+            for(int i = 0; i < xPlaces; i++) {
+                storeArray[i] = arr[i];
+            }
+
+            // rotating the array
+            for(int i = xPlaces; i < arrayLength; i++) {
+                arr[i - xPlaces] = arr[i];
+            }
+
+            // pushing the storage array into arr[]
+            for(int i = 0; i < xPlaces; i++) {
+                arr[arrayLength - xPlaces + i] = arr[i];
+            }
+
+            // it has auxilary space solution as well
+        }
+        else {
+            // throw exception.
+        }
+        return  arr;
+    }
+
+    private static  int[] leftRotateByOne(int arr[], int arrayLength) {
+
+        /*int storeInitial = Integer.MIN_VALUE;
+
+        for(int i = 0; i < arrayLength; i++) {
+            if(i == 0) {
+                storeInitial = arr[i];
+            }
+            else {
+                arr[i-1] = arr[i];
+            }
+        }
+        arr[arrayLength - 1] = storeInitial;*/
+
+        // more optimized.
+        int storeInitial = arr[0];
+
+        for(int i = 0; i < arrayLength; i++) {
+                arr[i-1] = arr[i];
+        }
+        arr[arrayLength - 1] = storeInitial;
+
+        return  arr;
     }
 
     private static int[] moveAllZerosToEnd(int arr[], int arrayLength) {

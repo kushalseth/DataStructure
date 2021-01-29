@@ -20,7 +20,7 @@ namespace CodingProblems.Console
             int[] testCase4 = { 10, 20, 30 };
 
 
-            int[] input = (int[])testCase1.Clone(); ; 
+            int[] input = (int[])testCase4.Clone(); ; 
             int[] output = ReverseArray.ReversedArray((int[])input.Clone());
 
             System.Console.WriteLine("Input:");
