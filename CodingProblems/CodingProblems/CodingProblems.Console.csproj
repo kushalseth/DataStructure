@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ArrayProblems\ArrayInsertAtEnd.cs" />
     <Compile Include="ArrayProblems\ArrayIsSorted.cs" />
+    <Compile Include="ArrayProblems\MoveZerosToEndOfArray.cs" />
     <Compile Include="ArrayProblems\RemoveDuplicate.cs" />
     <Compile Include="ArrayProblems\RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="ArrayProblems\ReverseAnArray.cs" />

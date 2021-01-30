@@ -10,14 +10,13 @@ namespace CodingProblems.ArrayProblems
     {
         public static int[] RemoveDuplicates(int[] array)
         {
-            int capturedIndex = 1;
-
-            for (int i = 1; i < array.Length; i++)
+            int bucketIndex = 1;
+            for(int i = 1; i < array.Length; i++)
             {
-                if (array[i - 1] != array[i])
+                if(array[i] != array[i-1])
                 {
-                    array[capturedIndex] = array[i];
-                    capturedIndex++;
+                    array[bucketIndex] = array[i];
+                    bucketIndex++;
                 }
             }
             return array;

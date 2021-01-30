@@ -44,9 +44,35 @@ public class Main {
         //int[] arr = new int[] { 1, 2, 3, 4, 5 };
         //System.out.println(leftRotateByOne(arr, arr.length));
 
-        int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
-        System.out.println(leftRotateByXPlace(arr, arr.length, 3));
+        //int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+        //System.out.println(leftRotateByXPlace(arr, arr.length, 3));
+
+        int[] arr = new int[] { 7, 10, 4, 3, 6, 5, 2 };
+        System.out.println(leadersInArray(arr, arr.length));
     }
+
+    private static  int[] leadersInArray(int arr[], int arrayLength) {
+        int[] outputArray = new int[arrayLength];
+        int outputArrayIndex = 0;
+
+        for(int i = 0; i < arrayLength; i++) {
+            var contextElement = arr[i];
+            boolean isLeader = true;
+            for(int j = i + 1; j < arrayLength; j++ ) {
+                if(arr[j] > contextElement) {
+                    isLeader = false;
+                    break;
+                }
+            }
+            if(isLeader) {
+                outputArray[outputArrayIndex] = contextElement;
+                outputArrayIndex++;
+            }
+        }
+
+        return outputArray;
+    }
+
 
     private static  int[] leftRotateByXPlace(int arr[], int arrayLength, int xPlaces) {
         if(xPlaces < arrayLength) {

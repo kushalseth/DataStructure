@@ -10,18 +10,17 @@ namespace CodingProblems.Console
     {
         static void Main(string[] args)
         {
-            // 12, 9, 90, 80
-            // -10, -4, -2, -33, -12
-            // 9
-            // 10, 20, 30
-            int[] testCase1 = { 12, 9, 90, 80 };
-            int[] testCase2 = { -10, -4, -2, -33, -12 };
+            int[] testCase1 = { 8, 5, 0, 10, 0, 20 };
+            int[] testCase2 = { -42, -42, -22, -23, -12, -12, -3, -1 };
             int[] testCase3 = { 9 };
+
             int[] testCase4 = { 20, 30, 30, 30, 40, 40, 40 };
 
+            int[] testCase5 = { 5, 7, 10, 12, 12, 15, 15, 17 };
 
-            int[] input = (int[])testCase4.Clone(); ; 
-            int[] output = RemoveDuplicatesFromSortedArray.RemoveDuplicates((int[])input.Clone());
+
+            int[] input = (int[])testCase1.Clone(); 
+            int[] output = MoveZerosToEndOfArray.MoveZerosToEnd((int[])input.Clone());
 
             System.Console.WriteLine("Input:");
             System.Console.Write(string.Join(Environment.NewLine, input));
