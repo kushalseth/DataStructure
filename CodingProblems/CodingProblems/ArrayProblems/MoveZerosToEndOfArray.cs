@@ -10,17 +10,19 @@ namespace CodingProblems.ArrayProblems
     {
         public static int[] MoveZerosToEnd(int[] arr)
         {
-            int countOfNonZeros = 0;
-            for (int i = 0; i < arr.Length; i++)
+            int bucketIndex = 0;
+
+            for(int i =0; i < arr.Length; i++)
             {
-                if (arr[i] != 0)
+                if(arr[i] != 0)
                 {
-                    var temp = arr[countOfNonZeros];
-                    arr[countOfNonZeros] = arr[i];
+                    int temp = arr[bucketIndex];
+                    arr[bucketIndex] = arr[i];
                     arr[i] = temp;
-                    countOfNonZeros++;
+                    bucketIndex++;
                 }
             }
+
             return arr;
         }
     }

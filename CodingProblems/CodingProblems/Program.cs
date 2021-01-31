@@ -10,16 +10,17 @@ namespace CodingProblems.Console
     {
         static void Main(string[] args)
         {
-            int[] testCase1 = { 8, 5, 0, 10, 0, 20 };
-            int[] testCase2 = { -42, -42, -22, -23, -12, -12, -3, -1 };
+            int[] testCase1 = { 2, 3, 0, 0, 4, 7, 0, 8 };
+            int[] testCase6 = { 0, 3, 0, 0, 4, 7, 0, 0 };
+            int[] testCase2 = { -42, 0, -22, 0, -12, -12, -3, -1 };
             int[] testCase3 = { 9 };
 
-            int[] testCase4 = { 20, 30, 30, 30, 40, 40, 40 };
+            int[] testCase4 = { 0, 9 };
 
             int[] testCase5 = { 5, 7, 10, 12, 12, 15, 15, 17 };
 
 
-            int[] input = (int[])testCase1.Clone(); 
+            int[] input = (int[])testCase5.Clone(); 
             int[] output = MoveZerosToEndOfArray.MoveZerosToEnd((int[])input.Clone());
 
             System.Console.WriteLine("Input:");
