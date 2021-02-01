@@ -2,7 +2,7 @@
 
 I will build the logic, code and then debug the coding problems in my youtube series of #LogicCodeDebug. So, this is going to be a step by step solution of coding problems. I believe, everyone has it's own way of learning. For few problems, it's easy to understand by just seeing the Logic but for few we need to debug them.
 
-Please join me in this Journey. If it's helpful, please give Star on GitHub or Like on YouTube, each star and like is a motivation.
+Please join me in this Journey. If it's helpful, please give Star on GitHub, each star is a motivation.
 
 I will be covering all the topics with videos at my channel: https://www.youtube.com/user/kushalseth1408. I love to connect with people, Let's connect and learn together.
 
