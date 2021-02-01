@@ -1,10 +1,17 @@
-# Topic wise Theory and practice problems of Data Structure and Algorithms.
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#LogicCodeDebug` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#100DaysOfAlgorithms` ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `CodeForces` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `LeetCode` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `KickStart` ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `SPOJ` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `HackerRank` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `GeeksForGeek` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `CodeChef`
 
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#100DaysOfAlgorithms` ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `CodeForces` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `LeetCode` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `KickStart` ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `SPOJ` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `HackerRank` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `GeeksForGeek` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `CodeChef`
+We will build the logic, code and then debug together. So, this is going to be a step by step solution of coding problems. I believe, everyone has it's own way of learning. For few problems, it's easy to understand by just seeing the Logic but for few we need to debug that.
 
-I am practicing problems from multiple websites and trying to build up my codeforces and other profiles.
+Please join me in this Journey. If it's helpful, please give us Star on GitHub, each star is a motivation.
 
-![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+)`I am also focusing on latest competitions and will be adding the questions in this repository. It's a start but a long way to cover. All the sugesstions are welcome. Stay connected and let's learn together.`
+I will be covering all the topics with videos at my channel: https://www.youtube.com/user/kushalseth1408
+
+## Arrays
+
+| #                                                                                                                   | Title                                                                          |                   YouTube                   | Solution                                                                                                                                 | Time Complexity | Space Complexity | Note |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | :-----------------------------------------: | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------- | :--------------: | :--: |
+|                                                                                                                     | [Second Largest element in array](https://www.youtube.com/watch?v=angBdWeAxd8) | https://www.youtube.com/watch?v=angBdWeAxd8 | <ul><li>[C#](https://github.com/kushalseth/DataStructure/blob/master/CodingProblems/CodingProblems/ArrayProblems/SecondLargestInArray.cs |
+| )</li> <li>[Java](https://github.com/kushalseth/DataStructure/blob/master/javadatastructure/src/Main.java)</li><ul> |                                                                                |                                             |                                                                                                                                          |                 |
 
 # Let's Start
 
