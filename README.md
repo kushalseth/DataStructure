@@ -1,8 +1,8 @@
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#LogicCodeDebug` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#100DaysOfAlgorithms` ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `CodeForces` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `LeetCode` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `KickStart` ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `SPOJ` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `HackerRank` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `GeeksForGeek` ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `CodeChef`
 
-I will be build the logic, code and then debug the coding problems. So, this is going to be a step by step solution of coding problems. I believe, everyone has it's own way of learning. For few problems, it's easy to understand by just seeing the Logic but for few we need to debug that.
+I will build the logic, code and then debug the coding problems in my youtube series of #LogicCodeDebug. So, this is going to be a step by step solution of coding problems. I believe, everyone has it's own way of learning. For few problems, it's easy to understand by just seeing the Logic but for few we need to debug them.
 
-Please join me in this Journey. If it's helpful, please give Star on GitHub, each star is a motivation.
+Please join me in this Journey. If it's helpful, please give Star on GitHub or Like on YouTube, each star and like is a motivation.
 
 I will be covering all the topics with videos at my channel: https://www.youtube.com/user/kushalseth1408. I love to connect with people, Let's connect and learn together.
 
