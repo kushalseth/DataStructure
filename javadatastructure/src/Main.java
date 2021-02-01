@@ -47,8 +47,28 @@ public class Main {
         //int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
         //System.out.println(leftRotateByXPlace(arr, arr.length, 3));
 
-        int[] arr = new int[] { 7, 10, 4, 3, 6, 5, 2 };
-        System.out.println(leadersInArray(arr, arr.length));
+        //int[] arr = new int[] { 7, 10, 4, 3, 6, 5, 2 };
+        //System.out.println(leadersInArray(arr, arr.length));
+
+        // int[] arr = new int[] { 2, 3, 10, 6, 4, 8, 1 };
+        int[] arr = new int[] { 10, 20, 30 }; //{ 7, 9, 5, 6, 3, 2 };
+        System.out.println(maximumDifference(arr, arr.length));
+    }
+
+    private static int maximumDifference(int arr[], int arrayLength) {
+        int maximumDifference = Integer.MIN_VALUE;
+
+        for(int i = 0; i < arrayLength; i++) {
+            var contextNumber = arr[i];
+            for(int j = i + 1; j < arrayLength; j++) {
+                int difference = arr[j] -  contextNumber;
+                if(difference > maximumDifference) {
+                    maximumDifference = difference;
+                }
+            }
+        }
+
+        return maximumDifference;
     }
 
     private static  int[] leadersInArray(int arr[], int arrayLength) {
