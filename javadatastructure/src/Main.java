@@ -1,3 +1,4 @@
+import javax.xml.crypto.dsig.keyinfo.KeyValue;
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -51,9 +52,18 @@ public class Main {
         //System.out.println(leadersInArray(arr, arr.length));
 
         // int[] arr = new int[] { 2, 3, 10, 6, 4, 8, 1 };
-        int[] arr = new int[] { 10, 20, 30 }; //{ 7, 9, 5, 6, 3, 2 };
-        System.out.println(maximumDifference(arr, arr.length));
+        // int[] arr = new int[] { 10, 20, 30 }; //{ 7, 9, 5, 6, 3, 2 };
+        // System.out.println(maximumDifference(arr, arr.length));
+
+        //int[] arr = new int[] { 10, 10, 10, 20,  20, 30 }; //{ 7, 9, 5, 6, 3, 2 };
+        //System.out.println(FrequenciesSortedArray.Get(arr, arr.length));
+
+        int[] arr = new int[] {1, 5, 3, 1, 2, 8};
+        System.out.println(StockBuyAndSell.GetProfits(arr));
+
     }
+
+
 
     private static int maximumDifference(int arr[], int arrayLength) {
         int maximumDifference = Integer.MIN_VALUE;
