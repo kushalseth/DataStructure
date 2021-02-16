@@ -58,9 +58,11 @@ public class Main {
         //int[] arr = new int[] { 10, 10, 10, 20,  20, 30 }; //{ 7, 9, 5, 6, 3, 2 };
         //System.out.println(FrequenciesSortedArray.Get(arr, arr.length));
 
-        int[] arr = new int[] {1, 5, 3, 1, 2, 8};
-        System.out.println(StockBuyAndSell.GetProfits(arr));
+        //int[] arr = new int[] {1, 5, 3, 1, 2, 8};
+        //System.out.println(StockBuyAndSell.GetProfits(arr));
 
+        int[] array = new int[] {3, 2, 1, 0, 1, 2, 3};
+        System.out.println(TappingRainWater.Calculate(array));
     }
 
 
