@@ -16,6 +16,6 @@ public class Maxconsecutiveones {
             }
         }
 
-        return maxCount;
+            return maxCount;
     }
 }

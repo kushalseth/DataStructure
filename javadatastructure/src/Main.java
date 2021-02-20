@@ -64,8 +64,11 @@ public class Main {
         //int[] array = new int[] {3, 2, 1, 0, 1, 2, 3};
         //System.out.println(TappingRainWater.Calculate(array));
 
-        int[] array = new int[] {1, 0, 1, 1, 1, 1, 0, 1, 1};
-        System.out.println(Maxconsecutiveones.Count(array));
+        //int[] array = new int[] {1, 0, 1, 1, 1, 1, 0, 1, 1};
+        //System.out.println(Maxconsecutiveones.Count(array));
+
+        int[] array = new int[] {2, 3, -8, 7, -1, 2, 3};
+        System.out.println(MaximumSumArray.Find(array));
     }
 
 
