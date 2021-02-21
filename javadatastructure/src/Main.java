@@ -67,8 +67,11 @@ public class Main {
         //int[] array = new int[] {1, 0, 1, 1, 1, 1, 0, 1, 1};
         //System.out.println(Maxconsecutiveones.Count(array));
 
-        int[] array = new int[] {2, 3, -8, 7, -1, 2, 3};
-        System.out.println(MaximumSumArray.Find(array));
+        //int[] array = new int[] {2, 3, -8, 7, -1, 2, 3};
+        //System.out.println(MaximumSumArray.Find(array));
+
+        int[] array = new int[] {10, 12, 8, 4};
+        System.out.println(MaximumEvenOddSubarray.Get(array));
     }
 
 
