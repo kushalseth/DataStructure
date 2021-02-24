@@ -67,11 +67,18 @@ public class Main {
         //int[] array = new int[] {1, 0, 1, 1, 1, 1, 0, 1, 1};
         //System.out.println(Maxconsecutiveones.Count(array));
 
-        //int[] array = new int[] {2, 3, -8, 7, -1, 2, 3};
+        //int[] array = new int[] {1,-2,3,-2};
         //System.out.println(MaximumSumArray.Find(array));
 
+        //int[] array = new int[] {10, 12, 8, 4};
+        //System.out.println(MaximumEvenOddSubarray.Get(array));
+
         int[] array = new int[] {10, 12, 8, 4};
-        System.out.println(MaximumEvenOddSubarray.Get(array));
+        System.out.println(MaximumCircularSumSubarray.maxCircularSum(array, array.length));
+
+        //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
+        //int t = NormalMaxSum.overallMaxSum(arr, n);
+        //System.out.println(t);
     }
 
 
