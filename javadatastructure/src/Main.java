@@ -73,8 +73,12 @@ public class Main {
         //int[] array = new int[] {10, 12, 8, 4};
         //System.out.println(MaximumEvenOddSubarray.Get(array));
 
-        int[] array = new int[] {10, 12, 8, 4};
-        System.out.println(MaximumCircularSumSubarray.maxCircularSum(array, array.length));
+        //int[] array = new int[] {10, 12, 8, 4};
+        //System.out.println(MaximumCircularSumSubarray.maxCircularSum(array, array.length));
+
+
+        int[] array = new int[] {3, 7, 4, 7, 7, }; // {8, 3, 4, 8, 8};
+        System.out.println(MajorityElement.Get(array));
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
