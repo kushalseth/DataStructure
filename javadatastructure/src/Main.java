@@ -80,8 +80,11 @@ public class Main {
         //int[] array = new int[] {3, 7, 4, 7, 7, }; // {8, 3, 4, 8, 8};
         //System.out.println(MajorityElement.Get(array));
 
-        int[] array = new int[] {1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1 }; // {8, 3, 4, 8, 8};
-        MinimumGroupFlips.PrintGroups(array, array.length);
+        //int[] array = new int[] {1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1 }; // {8, 3, 4, 8, 8};
+        //MinimumGroupFlips.PrintGroups(array, array.length);
+
+        int[] array = new int[] {5, -10, 6, 90, 3}; // {1, 8, 30, -5, 20, 7 };
+        System.out.println(MaximumSumOfKConsecutiveNumbers.Get(array, array.length, 2));
 
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
