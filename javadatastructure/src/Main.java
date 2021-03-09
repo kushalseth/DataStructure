@@ -83,9 +83,18 @@ public class Main {
         //int[] array = new int[] {1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1 }; // {8, 3, 4, 8, 8};
         //MinimumGroupFlips.PrintGroups(array, array.length);
 
-        int[] array = new int[] {5, -10, 6, 90, 3}; // {1, 8, 30, -5, 20, 7 };
-        System.out.println(MaximumSumOfKConsecutiveNumbers.Get(array, array.length, 2));
+        //int[] array = new int[] {5, -10, 6, 90, 3}; // {1, 8, 30, -5, 20, 7 };
+        //System.out.println(MaximumSumOfKConsecutiveNumbers.Get(array, array.length, 2));
 
+
+        //int[] array = new int[] {1, 4, 20, 3, 10, 5}; // {1, 8, 30, -5, 20, 7 };
+        //System.out.println(IsASubarrayWithGivenSum.Get(array, array.length, 33));
+
+        //int[] array = new int[] { 2, 8, 3, 9, 6, 5, 4 };
+        //System.out.println(PrefixSum.Get(array, 2, 6 ));
+
+        int[] array = new int[] { 4, 2, -2 };
+        System.out.println(PrefixSum.IsEquilibriumExits(array));
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
