@@ -93,8 +93,11 @@ public class Main {
         //int[] array = new int[] { 2, 8, 3, 9, 6, 5, 4 };
         //System.out.println(PrefixSum.Get(array, 2, 6 ));
 
-        int[] array = new int[] { 4, 2, -2 };
-        System.out.println(PrefixSum.IsEquilibriumExits(array));
+        //int[] array = new int[] { 4, 2, -2 };
+        //System.out.println(PrefixSum.IsEquilibriumExits(array));
+
+        int[] binarySearch = new int[] {10, 20, 30, 40, 50, 60};
+        System.out.println(BinarySearch.GetBetter(binarySearch, 10));
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
