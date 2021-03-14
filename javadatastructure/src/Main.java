@@ -96,8 +96,15 @@ public class Main {
         //int[] array = new int[] { 4, 2, -2 };
         //System.out.println(PrefixSum.IsEquilibriumExits(array));
 
+        //int[] binarySearch = new int[] {10, 20, 30, 40, 50, 60};
+        //System.out.println(BinarySearch.GetBetter(binarySearch, 10));
+
+
+        //int[] binarySearch = new int[] {10, 20, 30, 40, 50, 60};
+        //System.out.println(BinarySearch.ResursiveBinarySearch(binarySearch, 55, 0));
+
         int[] binarySearch = new int[] {10, 20, 30, 40, 50, 60};
-        System.out.println(BinarySearch.GetBetter(binarySearch, 10));
+        System.out.println(BinarySearch.RecursiveBinarySearchUsingDivide(binarySearch, 10, 0, binarySearch.length - 1));
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
