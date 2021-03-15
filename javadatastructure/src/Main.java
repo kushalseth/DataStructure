@@ -103,8 +103,12 @@ public class Main {
         //int[] binarySearch = new int[] {10, 20, 30, 40, 50, 60};
         //System.out.println(BinarySearch.ResursiveBinarySearch(binarySearch, 55, 0));
 
-        int[] binarySearch = new int[] {10, 20, 30, 40, 50, 60};
-        System.out.println(BinarySearch.RecursiveBinarySearchUsingDivide(binarySearch, 10, 0, binarySearch.length - 1));
+        //int[] binarySearch = new int[] {10, 20, 30, 40, 50, 60};
+        //System.out.println(BinarySearch.RecursiveBinarySearchUsingDivide(binarySearch, 10, 0, binarySearch.length - 1));
+
+        int[] binarySearch = new int[] {5, 10, 10, 15, 20, 20, 20};
+        System.out.println(SearchFirstOccurence.Get(binarySearch, 20));
+
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
