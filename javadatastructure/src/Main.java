@@ -109,8 +109,18 @@ public class Main {
        // int[] binarySearch = new int[] {5, 10, 10, 15, 20, 20, 20};
        // System.out.println(SearchFirstOccurence.Get(binarySearch, 20));
 
-        int[] searchingLastOccurence = new int[] {10, 15, 20, 20, 40, 40};
-        System.out.println(SearchingLastOccurence.Get(searchingLastOccurence, 11));
+        //int[] searchingLastOccurence = new int[] {10, 15, 20, 20, 40, 40};
+        //System.out.println(SearchingLastOccurence.Get(searchingLastOccurence, 11));
+
+        //int[] array = new int[] { 1,1,1,1,1,1,1 };
+        //System.out.println(Count1sInSortedArray.Get(array));
+
+        //int number = 25;
+        //System.out.println(Common.CalculateSquareRoot(number));
+
+        int number = 14;
+        System.out.println(Common.CalculateSquareRootOptimized(number));
+
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
