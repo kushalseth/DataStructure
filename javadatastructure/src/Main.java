@@ -118,9 +118,12 @@ public class Main {
         //int number = 25;
         //System.out.println(Common.CalculateSquareRoot(number));
 
-        int number = 14;
-        System.out.println(Common.CalculateSquareRootOptimized(number));
+        //int number = 14;
+        //System.out.println(Common.CalculateSquareRootOptimized(number));
 
+        int number = 100;
+        int[] array = new int[] {1, 10, 15, 20, 40, 80, 90, 100, 120, 500};
+        System.out.println(Common.SearchInASortedArrayOptimized(array, number));
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
