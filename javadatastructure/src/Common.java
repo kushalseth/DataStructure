@@ -1,5 +1,41 @@
 public  class Common {
 
+    public static int SearchInSortedRotatedArray(int arr[], int x) {
+        int result = -1;
+
+        int lowIndex = arr[0];
+        int highIndex = arr[arr.length - 1];
+
+        while (lowIndex < highIndex) {
+            int midIndex = (lowIndex + highIndex) / 2;
+
+            if(x == arr[midIndex] ) {
+                result = midIndex;
+                break;
+            }
+            else if(arr[lowIndex] < arr[midIndex]) {
+                if(x < arr[midIndex] && x >= arr[lowIndex]) {
+                    highIndex = midIndex - 1;
+                }
+                else  {
+                    lowIndex = midIndex + 1;
+                }
+            }
+            else {
+                if(x > arr[midIndex] && x <= arr[highIndex]) {
+                    lowIndex = midIndex + 1;
+                }
+                else {
+                    highIndex = midIndex -1;
+                }
+            }
+
+        }
+
+        return  result;
+    }
+
+
     public  static int SearchInASortedArrayOptimized(int arr[], int x) {
         int index = -1;
 
