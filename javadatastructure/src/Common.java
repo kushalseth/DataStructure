@@ -1,5 +1,32 @@
 public  class Common {
 
+    public static int FindAPeakElement(int arr[]) {
+        int result = -1;
+
+            int lowIndex = 1;
+            int highIndex = arr.length - 1;
+            while (lowIndex <= highIndex) {
+                int midIndex = (lowIndex + highIndex) / 2;
+
+                if((midIndex == 0 || arr[midIndex -1 ] <= arr[midIndex] ) &&
+                        (midIndex == arr.length-1 || arr[midIndex + 1] <= arr[midIndex])) {
+                    result = arr[midIndex];
+                    break;
+                }
+
+                if(arr[midIndex - 1] > arr[midIndex]){
+                    highIndex = midIndex - 1;
+                }
+                else  {
+                    lowIndex = midIndex + 1;
+                }
+            }
+
+
+        return result;
+    }
+
+
     public static int SearchInSortedRotatedArray(int arr[], int x) {
         int result = -1;
 
