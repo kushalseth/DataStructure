@@ -125,9 +125,11 @@ public class Main {
         //int[] array = new int[] {1, 10, 15, 20, 40, 80, 90, 100, 120, 500};
         //System.out.println(Common.SearchInASortedArrayOptimized(array, number));
 
-        int[] array = new int[] {40, 80, 40, 30, 20, 50, 45};
-        System.out.println(Common.FindAPeakElement(array));
+        //int[] array = new int[] {40, 80, 40, 30, 20, 50, 45};
+        //System.out.println(Common.FindAPeakElement(array));
 
+        int arr[] = new int[] {2,5,8,12,30};
+        System.out.println(Common.TwoPointerApproach(arr, 17));
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);

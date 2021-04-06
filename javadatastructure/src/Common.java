@@ -1,5 +1,28 @@
 public  class Common {
 
+    public static boolean TwoPointerApproach(int arr[], int x) {
+        boolean result = false;
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int sum = arr[left] + arr[right];
+            if(sum == x) {
+                result = true;
+                break;
+            }
+            else if(sum < x ) {
+                left = left + 1;
+            }
+            else {
+                right = right - 1;
+            }
+        }
+
+        return result;
+    }
+
     public static int FindAPeakElement(int arr[]) {
         int result = -1;
 
