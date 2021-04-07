@@ -1,5 +1,49 @@
 public  class Common {
 
+    public static float MedianOfSortedArray(int arr1[], int arr2[]) {
+        float result = -1;
+
+        int midIndex = (((arr1.length) + (arr2.length)) / 2);
+
+
+        int midIndexReminder = ((arr1.length) + (arr2.length)) % 2;
+
+            int arr1Pointer = 0;
+            int arr2Pointer = 0;
+            int combinedLength = arr1.length + arr2.length;
+
+            int[] resultendArray = new int[combinedLength];
+
+            for(int i = 0; i < combinedLength; i++) {
+
+                if(arr1[arr1Pointer] < arr2[arr2Pointer]) {
+                    resultendArray[i] = arr1[arr1Pointer];
+                    arr1Pointer++;
+                }
+                else {
+                    resultendArray[i] = arr2[arr2Pointer];
+                    arr2Pointer++;
+                }
+
+                if(midIndex == i)  {
+                    if(midIndex %2 != 0) {
+                        //result = resultendArray[(midIndex + (midIndex - 1)) / 2];
+                        int quotent  = (resultendArray[midIndex] + resultendArray[midIndex - 1]) / 2;
+
+                        result = quotent;
+                    }
+                    else {
+                        result = resultendArray[midIndex];
+                    }
+                    break;
+                }
+
+            }
+
+
+        return result;
+    }
+
     public static boolean TwoPointerApproach(int arr[], int x) {
         boolean result = false;
 
