@@ -131,9 +131,14 @@ public class Main {
         //int arr[] = new int[] {2,5,8,12,30};
         //System.out.println(Common.TwoPointerApproach(arr, 17));
 
-        int arr1[] = new int[] {10,20,30,40,50};
-        int arr2[] = new int[] {5,15,25,35,45};
-        System.out.println(Common.MedianOfSortedArray(arr1, arr2));
+        //int arr1[] = new int[] {10,20,30,40,50};
+        //int arr2[] = new int[] {5,15,25,35,45};
+        //System.out.println(Common.MedianOfSortedArray(arr1, arr2));
+
+        int arr[] = new int[] { 8,8,6,6,6,4,6 };
+        System.out.println(Common.FindMajorityElement(arr, arr.length));
+
+
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
         //System.out.println(t);

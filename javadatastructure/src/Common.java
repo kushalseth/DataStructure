@@ -1,5 +1,37 @@
 public  class Common {
 
+    public static int FindMajorityElement(int arr[], int n) {
+        int result = 0;
+        int count = 1;
+
+        for(int i = 1; i < n; i++) {
+            if(arr[result] == arr[i]) {
+                count++;
+            }
+            else {
+                count--;
+            }
+            if(count == 0) {
+                result = i;
+                count = 1;
+            }
+        }
+
+        count = 0;
+
+        for(int i =0; i < n; i++) {
+            if(arr[result] == arr[i]) {
+                count++;
+            }
+        }
+
+        if(count <= n/2) {
+            result = -1;
+        }
+
+        return result;
+    }
+
     public static float MedianOfSortedArray(int arr1[], int arr2[]) {
         float result = -1;
 
