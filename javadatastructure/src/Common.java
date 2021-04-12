@@ -1,5 +1,22 @@
 public  class Common {
 
+    public static int RepeatingElement(int arr[], int n) {
+        int result = 0;
+        boolean visited[] = new boolean[n];
+
+        for(int i = 0; i < n; i++) {
+            if(visited[arr[i]]) {
+                result = arr[i];
+                break;
+            }
+            else {
+                visited[arr[i]] = true;
+            }
+        }
+
+        return result;
+    }
+
     public static int FindMajorityElement(int arr[], int n) {
         int result = 0;
         int count = 1;
