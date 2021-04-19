@@ -1,5 +1,13 @@
 public  class Common {
 
+    public static int MaximumNumberOfPagesReadByAnyStudent(int arr[], int numberOfStudents, int arrayLength) {
+        int result = 0;
+
+        
+
+        return result;
+    }
+
     public static int RepeatingElement(int arr[], int n) {
         int result = 0;
         boolean visited[] = new boolean[n];

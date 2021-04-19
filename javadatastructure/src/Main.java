@@ -138,8 +138,16 @@ public class Main {
         //int arr[] = new int[] { 8,8,6,6,6,4,6 };
         //System.out.println(Common.FindMajorityElement(arr, arr.length));
 
-        int arr[] = new int[] { 0,2,1,3,2,2 };
-        System.out.println(Common.RepeatingElement(arr, arr.length));
+        //int arr[] = new int[] { 0,2,1,3,2,2 };
+        //System.out.println(Common.RepeatingElement(arr, arr.length));
+
+        // int arr[] = new int[] {5, 30, 3, 20};
+        // System.out.println(SortCommon.InitialSort(arr));
+
+        int arr[] = new int[] {10, 8, 20, 5};
+        System.out.println(SortCommon.BubbleSort(arr));
+
+
 
         //int arr[] = {8, -4, 3, -5, 4}; int n = 5;
         //int t = NormalMaxSum.overallMaxSum(arr, n);
