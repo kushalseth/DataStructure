@@ -3,6 +3,25 @@ import java.util.Comparator;
 
 public class SortCommon {
 
+    public static int[] SelectionSort(int[] arr) {
+
+        int min_index = 0;
+        for(int i =  0; i < arr.length; i++) {
+            min_index = i;
+            for(int j = i + 1; j < arr.length; j++) {
+                if(arr[j] < arr[min_index]) {
+                    min_index = j;
+                }
+            }
+
+            // swapping
+            int temp = arr[i];
+            arr[i] = arr[min_index];
+            arr[min_index] = temp;
+        }
+
+        return arr;
+    }
 
     public static int[] BubbleSort(int[] arr) {
         boolean swapped = false;
