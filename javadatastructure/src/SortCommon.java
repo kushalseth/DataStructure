@@ -3,6 +3,84 @@ import java.util.Comparator;
 
 public class SortCommon {
 
+    public static void MergeSort(int arr[], int low, int r) {
+        if(r > low) {
+            int middle = (low + r) / 2;
+            MergeSort(arr, low, middle);
+            MergeSort(arr, middle + 1, r);
+            MergeFucntion(arr, low, middle, r);
+        }
+    }
+
+
+    public static void MergeFucntion(int arr[], int low, int mid, int high) {
+        int n1 = mid - low + 1; // n1 and n2 are lengths
+        int n2 = high - mid;
+
+        int[] leftArray = new int[n1];
+        int[] rightArray = new int[n2];
+
+        for(int i = 0; i < n1; i++) {
+            leftArray[i] = arr[low + i];
+        }
+        for(int i = 0; i < n2; i++) {
+            rightArray[i] = arr[mid + 1 + i]; // or n1 + 1
+        }
+
+        int i = 0; int j = 0; // indexes for traversing the leftarr and rightarr
+        int k = low; // index for filling the k array
+
+        // merging two arrays
+        while(i < n1 && j < n2) {
+            if(leftArray[i] <= rightArray[j]) {
+                arr[k] = leftArray[i];
+                i++; k++;
+            }
+            else {
+                arr[k] = rightArray[j];
+                j++; k++;
+            }
+        }
+
+        while(i < n1) {
+            arr[k] = leftArray[i];
+            i++; k++;
+        }
+
+        while (j < n2) {
+            arr[k] = rightArray[j];
+            j++; k++;
+        }
+
+        //MergeTwoArrays(leftArray, rightArray, n1, n2);
+    }
+
+    public static void MergeTwoArrays(int a[], int b[], int m, int n) {
+        int i = 0; int j = 0;
+
+        while (i < m && j < n) {
+            if(a[i] <= b[j]) {
+                System.out.println(a[i]);
+                i++;
+            }
+            else  {
+                System.out.println(b[j]);
+                j++;
+            }
+        }
+
+        while (i < m) {
+            System.out.println(a[i]);
+            i++;
+        }
+
+        while (j < n) {
+            System.out.println(b[j]);
+            j++;
+        }
+    }
+
+
     public static int[] InsertionSort(int[] arr) {
 
         for(int i = 0; i < arr.length; i++) {
