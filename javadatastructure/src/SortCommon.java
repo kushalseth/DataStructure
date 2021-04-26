@@ -3,6 +3,27 @@ import java.util.Comparator;
 
 public class SortCommon {
 
+    public static void IntersectionOfArray(int arr1[], int arr2[], int m, int n) {
+        int i = 0; int j = 0;
+        while(i < m && j < n) {
+            if(i>0 && arr1[i-1]==arr1[i]){
+                i++;
+                continue;
+            }
+
+            if(arr1[i] < arr2[j]) {
+                i ++;
+            }
+            else if(arr1[i] > arr2[j]) {
+                j++;
+            }
+            else {
+                System.out.println(arr1[i]);
+                i++; j++;
+            }
+        }
+    }
+
     public static void MergeSort(int arr[], int low, int r) {
         if(r > low) {
             int middle = (low + r) / 2;
