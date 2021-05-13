@@ -1,7 +1,221 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.Vector;
 
 public class SortCommon {
+
+    static void bucketSort(int arr[], int n, int k) {
+
+        int max_val=arr[0];
+        for(int i=1;i<n;i++)
+            max_val=Math.max(max_val,arr[i]);
+        max_val++;
+
+        @SuppressWarnings("unchecked")
+        Vector<Integer>[] buckets = new Vector[n];
+
+        for (int i = 0; i < n; i++) {
+            buckets[i] = new Vector<Integer>();
+        }
+
+        for (int i = 0; i < n; i++) {
+            int idx = (arr[i] * k)/max_val;
+            buckets[(int)idx].add(arr[i]);
+        }
+
+        for (int i = 0; i < k; i++) {
+            Collections.sort(buckets[i]);
+        }
+
+        int index = 0;
+        for (int i = 0; i < k; i++) {
+            for (int j = 0; j < buckets[i].size(); j++) {
+                arr[index++] = buckets[i].get(j);
+            }
+        }
+    }
+
+    static void countSort(int arr[], int n, int k)
+    {
+        int[] count=new int[k];
+        for(int i=0;i<k;i++)
+            count[i]=0;
+        for(int i=0;i<n;i++)
+            count[arr[i]]++;
+
+        for(int i=1;i<k;i++)
+            count[i]=count[i-1]+count[i];
+
+        int[] output=new int[n];
+        for(int i=n-1;i>=0;i--){
+            output[count[arr[i]]-1]=arr[i];
+            count[arr[i]]--;
+        }
+        for(int i=0;i<n;i++)
+            arr[i]=output[i];
+    }
+
+    static void cycleSortDistinct(int arr[], int n)
+    {
+        for(int cs=0;cs<n-1;cs++){
+            int item=arr[cs];
+            int pos=cs;
+            for(int i=cs+1;i<n;i++)
+                if(arr[i]<item)
+                    pos++;
+            //swap(item,arr[pos])
+
+            int temp=item;
+            item=arr[pos];
+            arr[pos]=temp;
+            while(pos!=cs){
+                pos=cs;
+                for(int i=cs+1;i<n;i++)
+                    if(arr[i]<item)
+                        pos++;
+
+                //swap(item,arr[pos])
+                temp=item;
+                item=arr[pos];
+                arr[pos]=temp;
+            }
+        }
+    }
+
+
+    static int maxGuest()
+    {
+
+        int arr[] = { 900, 600, 700};
+        int dep[] = { 1000, 800, 730};
+        int n = arr.length;
+
+        Arrays.sort(arr);
+        Arrays.sort(dep);
+
+        int i=1,j=0,res=1,curr=1;
+        while(i<n && j<n){
+            if(arr[i]<dep[j]){
+                curr++;i++;
+            }
+            else{
+                curr--;j++;
+            }
+            res=Math.max(curr,res);
+        }
+        return res;
+    }
+
+    public static void mergeIntervals()
+    {
+        Interval arr[] = { new Interval(5,10),new Interval(3,15),new Interval(18,30),
+                new Interval(2,7) };
+
+        int n = arr.length;
+
+        Arrays.sort(arr);
+
+        int res = 0;
+
+        for (int i=1; i<n; i++)
+        {
+            if (arr[res].e >=  arr[i].s)
+            {
+                arr[res].e = Math.max(arr[res].e, arr[i].e);
+                arr[res].s = Math.min(arr[res].s, arr[i].s);
+            }
+            else {
+                res++;
+                arr[res] = arr[i];
+            }
+        }
+
+        for (int i = 0; i <= res; i++)
+            System.out.print(  "[" + arr[i].s + ", " + arr[i].e + "] ");
+    }
+
+    int getMinDiff(int arr[], int n){
+        Arrays.sort(arr);
+
+        int res = Integer.MAX_VALUE;
+        for(int i = 1; i < n; i++){
+            res = Math.min(res, arr[i] - arr[i-1]);
+        }
+        return res;
+    }
+
+    static void sortthree(int arr[],int n){
+        int l=0,h=n-1,mid=0;
+        while(mid<=h){
+            switch(arr[mid]){
+                case 0:
+                    //swapping arr[l] & arr[mid])
+                    int temp=arr[l];
+                    arr[l]=arr[mid];
+                    arr[mid]=temp;
+
+                    l++;mid++;
+                    break;
+                case 1:
+                    mid++;
+                    break;
+                case 2:
+                    //swapping arr[h] & arr[mid])
+                    temp=arr[h];
+                    arr[h]=arr[mid];
+                    arr[mid]=temp;
+
+                    h--;
+                    break;
+            }
+        }
+
+    }
+
+    static void sort(int arr[],int n){
+        int i=-1,j=n;
+        while(true)
+        {
+            do{i++;}while(arr[i]<0);
+            do{j--;}while(arr[j]>=0);
+            if(i>=j)return;
+
+            //swapping arr[i] & arr[j]
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+
+        }
+    }
+
+    static int minDiff(int arr[],int n,int m){
+        if(m>n)
+            return -1;
+        Arrays.sort(arr);
+        int res=arr[m-1]-arr[0];
+        for(int i=0;(i+m-1)<n;i++)
+            res=Math.min(res,arr[i+m-1]-arr[i]);
+        return res;
+    }
+
+
+    static  int kthSmallest(int arr[], int n , int k) {
+        int l = 0; int r = n -1;
+        while(l <= r) {
+            int p = iPartition(arr, l, r);
+            if(p == k - 1) {
+                return p;
+            }
+            else if(p > k -1) {
+                r = p -1;
+            }
+            else {
+                r = p + 1;
+            }
+        }
+        return -1;
+    }
 
     static void qSortusingHoare(int arr[],int l,int h){
         if(l<h){
@@ -299,6 +513,22 @@ public class SortCommon {
        return arr;
     }
 }
+
+
+class Interval implements Comparable<Interval>
+{
+    int s, e;
+
+    Interval(int s, int e)
+    {
+        this.s = s;
+        this.e = e;
+    }
+
+    public int compareTo(Interval a)
+    { return this.s - a.s; }
+};
+
 
 class MyComparable implements Comparator<Integer> {
     public int Compare(Integer a, Integer b) {

@@ -145,7 +145,7 @@ public class Main {
         // System.out.println(SortCommon.InitialSort(arr));
 
         int arr[] = new int[] {10, 8, 20, 5};
-        System.out.println(SortCommon.BubbleSort(arr));
+        SortCommon.mergeIntervals();
 
 
 
