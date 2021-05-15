@@ -5,6 +5,197 @@ import java.util.Vector;
 
 public class SortCommon {
 
+
+    static public int matMed(int mat[][], int r ,int c)
+    {
+        int min = mat[0][0], max = mat[0][c-1];
+        for (int i=1; i<r; i++)
+        {
+            if (mat[i][0] < min)
+                min = mat[i][0];
+
+            if (mat[i][c-1] > max)
+                max = mat[i][c-1];
+        }
+
+        int medPos = (r * c + 1) / 2;
+        while (min < max)
+        {
+            int mid = (min + max) / 2;
+            int midPos = 0;
+            int pos = 0;
+            for (int i = 0; i < r; ++i){
+                pos = Arrays.binarySearch(mat[i],mid);
+
+                if(pos < 0)
+                    pos = Math.abs(pos) - 1;
+
+
+                else
+                {
+                    while(pos < mat[i].length && mat[i][pos] == mid)
+                        pos += 1;
+                }
+
+                midPos = midPos + pos;
+            }
+            if (midPos < medPos)
+                min = mid + 1;
+            else
+                max = mid;
+        }
+        return min;
+    }
+
+    static void search(int mat[][], int x)
+    {
+        int R = 4, C = 4;
+        int i  = 0, j = C - 1;
+
+        while(i < R && j >= 0)
+        {
+            if(mat[i][j] == x)
+            {
+                System.out.println("Found at (" + i + ", " + j + ")");
+                return;
+            }
+            else if(mat[i][j] > x)
+            {
+                j--;
+            }
+            else
+            {
+                i++;
+            }
+        }
+        System.out.println("Not Found");
+    }
+
+    static void printSpiral(int mat[][], int R, int C)
+    {
+        int top = 0, left = 0, bottom = R - 1, right = C - 1;
+
+        while(top <= bottom && left <= right)
+        {
+            for(int i = left; i <= right; i++)
+                System.out.print(mat[top][i] + " ");
+
+            top++;
+
+            for(int i = top; i <= bottom; i++)
+                System.out.print(mat[i][right] + " ");
+
+            right--;
+
+            if(top <= bottom){
+                for(int i = right; i >= left; i--)
+                    System.out.print(mat[bottom][i] + " ");
+
+                bottom--;
+            }
+
+            if(left <= right){
+                for(int i = bottom; i >= top; i--)
+                    System.out.print(mat[i][left] + " ");
+
+                left++;
+            }
+        }
+    }
+
+    static void rotate90(int mat[][])
+    {
+        int n = 4;
+        for(int i = 0; i < n; i++)
+            for(int j = i + 1; j < n; j++)
+                swap(mat, i, j);
+
+        for(int i = 0; i < n; i++)
+        {
+            int low = 0, high = n - 1;
+
+            while(low < high)
+            {
+                swap2(low, high, i, mat);
+
+                low++;
+                high--;
+            }
+        }
+    }
+
+    static void swap2(int low, int high, int i, int mat[][])
+    {
+        int temp = mat[low][i];
+        mat[low][i] = mat[high][i];
+        mat[high][i] = temp;
+    }
+
+
+    static void transpose(int mat[][])
+    {
+        int n = 4;
+        for(int i = 0; i < n; i++)
+            for(int j = i + 1; j < n; j++)
+                swap(mat, i, j);
+    }
+
+    static void swap(int mat[][], int i, int j)
+    {
+        int temp = mat[i][j];
+        mat[i][j] = mat[j][i];
+        mat[j][i] = temp;
+    }
+
+
+    static void bTraversal(int mat[][])
+    {
+        int R = 4, C = 4;
+        if(R == 1)
+        {
+            for(int i = 0; i < C; i++)
+                System.out.print(mat[0][i] + " ");
+        }
+        else if(C == 1)
+        {
+            for(int i = 0; i < R; i++)
+                System.out.print(mat[i][0] + " ");
+        }
+        else
+        {
+            for(int i = 0; i < C; i++)
+                System.out.print(mat[0][i] + " ");
+            for(int i = 1; i < R; i++)
+                System.out.print(mat[i][C - 1] + " ");
+            for(int i = C - 2; i >= 0; i--)
+                System.out.print(mat[R - 1][i] + " ");
+            for(int i = R - 2; i >= 1; i--)
+                System.out.print(mat[i][0] + " ");
+        }
+
+    }
+
+    static void printSnake(int mat[][])
+    {
+        int R = 4, C = 4;
+        for(int i = 0; i < R; i++)
+        {
+            if(i % 2 == 0)
+            {
+                for(int j = 0; j < C; j++)
+                    System.out.print(mat[i][j] + " ");
+            }
+            else
+            {
+                for(int j = C - 1; j >= 0; j--)
+                    System.out.print(mat[i][j] + " ");
+            }
+
+
+        }
+    }
+
+
     static void bucketSort(int arr[], int n, int k) {
 
         int max_val=arr[0];
