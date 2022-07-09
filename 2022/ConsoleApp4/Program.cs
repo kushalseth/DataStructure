@@ -13,6 +13,59 @@ namespace ConsoleApp4
             //int[] index = BubbleSort(new int[] { 2, 3, 5, 7, 9 });
         }
 
+        static void Merge2(int[] a, int l, int m, int h)
+        {
+            int[] leftArray = new int[m - l + 1];
+            int[] rightArray = new int[h - m];
+
+            for(int i = 0; i < leftArray.Length; i++)
+            {
+                leftArray[i] = a[i];
+            }
+
+            for(int j = 0; j < rightArray.Length; j++)
+            {
+                rightArray[j] = a[m + 1 + j];
+            }
+            Merge(leftArray, rightArray, leftArray.Length, rightArray.Length);
+
+        }
+
+        static int[] Merge(int[] a, int[] b, int m, int n)
+        {
+            int i = 0, j = 0;
+            int[] c = new int[m + n];
+            int k = 0;
+
+            while(i < m && j < n)
+            {
+                if(a[i] <= b[j])
+                {
+                    c[k] = a[i];
+                    i++; k++;
+                }
+                else
+                {
+                    c[k] = b[j];
+                    j++; k++;
+                }
+            }
+
+            while(i < m)
+            {
+                c[k] = a[i];
+                k++; i++;
+            }
+
+            while(j < n)
+            {
+                c[k] = b[j];
+                k++; j++;
+            }
+
+            return c;
+        }
+
         static void InsertionSort(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
