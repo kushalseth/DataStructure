@@ -5,3 +5,11 @@ E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\De
 E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.pdb
 E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.Console.csprojAssemblyReference.cache
 E:\Personal Data\GIT_personal\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.Console.csproj.CoreCompileInputs.cache
+C:\Personal\git_personal\python git\DataStructure\CodingProblems\CodingProblems\bin\Debug\CodingProblems.exe.config
+C:\Personal\git_personal\python git\DataStructure\CodingProblems\CodingProblems\bin\Debug\CodingProblems.exe
+C:\Personal\git_personal\python git\DataStructure\CodingProblems\CodingProblems\bin\Debug\CodingProblems.pdb
+C:\Personal\git_personal\python git\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.Console.csproj.AssemblyReference.cache
+C:\Personal\git_personal\python git\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.Console.csproj.SuggestedBindingRedirects.cache
+C:\Personal\git_personal\python git\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.Console.csproj.CoreCompileInputs.cache
+C:\Personal\git_personal\python git\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.exe
+C:\Personal\git_personal\python git\DataStructure\CodingProblems\CodingProblems\obj\Debug\CodingProblems.pdb
