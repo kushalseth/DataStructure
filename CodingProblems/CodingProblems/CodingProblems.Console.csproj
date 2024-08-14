@@ -65,6 +65,7 @@
     <Compile Include="Recursion\PrintNos.cs" />
     <Compile Include="Recursion\SumOfDigits.cs" />
     <Compile Include="takeuforward\CountDigitsInNumber.cs" />
+    <Compile Include="takeuforward\ReverseDigitsOfNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

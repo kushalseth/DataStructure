@@ -12,7 +12,7 @@ namespace CodingProblems.Console
         static void Main(string[] args)
         {
 
-            int result = CountDigitsInNumber.CountDigits(1);
+            int result = ReverseDigitsOfNumber.ReverseDigits(3740);
             System.Console.WriteLine("result is " + result);
 
             //int[] testCase1 = { 2, 3, 0, 0, 4, 7, 0, 8 };
