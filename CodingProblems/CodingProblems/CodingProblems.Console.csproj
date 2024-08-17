@@ -68,6 +68,7 @@
     <Compile Include="takeuforward\ArmstrongNumber.cs" />
     <Compile Include="takeuforward\CountDigitsInNumber.cs" />
     <Compile Include="takeuforward\GreatestCommonDivisor.cs" />
+    <Compile Include="takeuforward\IsPrime.cs" />
     <Compile Include="takeuforward\Palindrome.cs" />
     <Compile Include="takeuforward\ReverseDigitsOfNumber.cs" />
   </ItemGroup>

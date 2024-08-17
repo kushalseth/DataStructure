@@ -12,7 +12,7 @@ namespace CodingProblems.Console
         static void Main(string[] args)
             {
 
-            bool result = ArmstrongNumber.Calculate(153);
+            bool result = IsPrime.Calculate(153);
             System.Console.WriteLine("result is " + result);
             System.Console.WriteLine("");
 
