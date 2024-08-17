@@ -65,6 +65,7 @@
     <Compile Include="Recursion\PrintNos.cs" />
     <Compile Include="Recursion\SumOfDigits.cs" />
     <Compile Include="takeuforward\CountDigitsInNumber.cs" />
+    <Compile Include="takeuforward\GreatestCommonDivisor.cs" />
     <Compile Include="takeuforward\Palindrome.cs" />
     <Compile Include="takeuforward\ReverseDigitsOfNumber.cs" />
   </ItemGroup>

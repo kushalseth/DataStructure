@@ -18,7 +18,7 @@ namespace CodingProblems.takeuforward
 
             while(counter < (numberArray.Length / 2))
             {
-                if (numberArray[counter] == numberArray[numberArray.Length - 1]) {
+                if (numberArray[counter] == numberArray[numberArray.Length - 1 - counter]) {
                     counter++;
                     continue;
                 }
