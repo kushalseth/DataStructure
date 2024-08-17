@@ -64,6 +64,7 @@
     <Compile Include="Recursion\Fibonacci.cs" />
     <Compile Include="Recursion\PrintNos.cs" />
     <Compile Include="Recursion\SumOfDigits.cs" />
+    <Compile Include="takeuforward\AllDividorsOfN.cs" />
     <Compile Include="takeuforward\ArmstrongNumber.cs" />
     <Compile Include="takeuforward\CountDigitsInNumber.cs" />
     <Compile Include="takeuforward\GreatestCommonDivisor.cs" />
