@@ -32,7 +32,7 @@ namespace CodingProblems.takeuforward
             {
                 for(int i = 0; i < factorsOfN1.Length; i ++)
                 {
-                    if()
+                   // if()
                 }
             }
             else {

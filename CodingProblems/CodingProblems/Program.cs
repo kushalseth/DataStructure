@@ -10,10 +10,11 @@ namespace CodingProblems.Console
     class Program
     {
         static void Main(string[] args)
-        {
+            {
 
-            bool result = Palindrome.Calculate(121);
+            bool result = ArmstrongNumber.Calculate(153);
             System.Console.WriteLine("result is " + result);
+            System.Console.WriteLine("");
 
             //int[] testCase1 = { 2, 3, 0, 0, 4, 7, 0, 8 };
             //int[] testCase6 = { 0, 3, 0, 0, 4, 7, 0, 0 };
