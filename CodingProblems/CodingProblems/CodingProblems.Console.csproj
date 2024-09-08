@@ -70,6 +70,10 @@
     <Compile Include="takeuforward\GreatestCommonDivisor.cs" />
     <Compile Include="takeuforward\IsPrime.cs" />
     <Compile Include="takeuforward\Palindrome.cs" />
+    <Compile Include="takeuforward\Recursion\Print1toN.cs" />
+    <Compile Include="takeuforward\Recursion\PrintName.cs" />
+    <Compile Include="takeuforward\Recursion\PrintNto1.cs" />
+    <Compile Include="takeuforward\Recursion\SumofNNumbers.cs" />
     <Compile Include="takeuforward\ReverseDigitsOfNumber.cs" />
   </ItemGroup>
   <ItemGroup>

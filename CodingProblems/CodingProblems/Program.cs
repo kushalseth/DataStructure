@@ -1,6 +1,7 @@
 ﻿using CodingProblems.ArrayProblems;
 using CodingProblems.Recursion;
 using CodingProblems.takeuforward;
+using CodingProblems.takeuforward.Recursion;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace CodingProblems.Console
         static void Main(string[] args)
             {
 
-            bool result = IsPrime.Calculate(153);
+            int result = SumofNNumbers.Calculate(15);
             System.Console.WriteLine("result is " + result);
             System.Console.WriteLine("");
 
